@@ -44,3 +44,13 @@ console.log(newLength);
 //Removing the first element of an array
 let shiffted = myArray.shift();
 console.log(shiffted);
+
+//Array methods
+const secondArray= ["A", "B", "C", "D", "E", "F"];
+//slice method
+newArray = secondArray.slice(2);
+console.log(newArray);
+
+//reverse method
+const name = secondArray.reverse();
+console.log(name);
