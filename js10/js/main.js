@@ -54,3 +54,25 @@ console.log(newArray);
 //reverse method
 const name = secondArray.reverse();
 console.log(name);
+
+//join method
+//This method converts an array to a string
+let joined = secondArray.join();
+console.log(joined);
+
+//concat method
+const myArrayA = ["A", "B", "C", "D"];
+const myArrayB = ["x", "Y", "Z"];
+let contArray = myArrayA.concat(myArrayB);
+console.log(contArray);
+
+//spread method
+//This method spraeds out the contents of te array. It is represented using three dots
+let spread = [...myArrayA, ...myArrayB];
+console.log("Spreaded array: " + spread);
+
+const equipShelfA = ["baseball", "football", "volleyball"];
+const equipShelfB = ["basketball", "golf balls", "tennis balls"];
+
+const clothesShelfA = ["tank tops", "t-shirts", "jerseys"];
+const clothesShelfB = ["sweat tops", "sweat pants", "hoodies"];
