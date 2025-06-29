@@ -11,7 +11,7 @@ const vehicle = {
 // console.log(truck.wheel)
 // console.log(truck.engine());
 //Inheritance 
-
+ 
 const car = Object.create(vehicle);
 car.doors = 4;
 car.engine = function (){
@@ -25,11 +25,11 @@ console.log(tesla.wheel);
 tesla.engine = function(){
   return "Shhhhh...";
 };
-console.log(tesla.engine());
+console.log(tesla.engine()); 
 
 console.log("This will return values inherited from objects.");
 const band = {
-  vocals : "Robert Plant",
+  vocals : "Robert Plant", 
   guitar : "Jimmy Page",
   bass : "John Paul Jones",
   drums : "John Bonham"
