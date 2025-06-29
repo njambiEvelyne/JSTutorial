@@ -29,7 +29,7 @@ console.log(tesla.engine());
 
 console.log("This will return values inherited from objects.");
 const band = {
-  vocals : "Robert Plant",
+  vocals : "Robert Plant", 
   guitar : "Jimmy Page",
   bass : "John Paul Jones",
   drums : "John Bonham"
