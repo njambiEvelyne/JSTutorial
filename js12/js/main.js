@@ -55,7 +55,7 @@ class User{
   }
   //Getter
   get name (){
-    return this._name.toUpperCase();//Custom behaviour when getting
+    return this.name.toUpperCase();//Custom behaviour when getting
   }
   //Setter
   set name(newName){
@@ -63,7 +63,7 @@ class User{
       console.log("Name must be atleast three characters long.")
     }
     else{
-      this._name = newName;
+      this.name = newName;
     }
   }
   personal (){
@@ -82,7 +82,7 @@ class Students{
     this.registeration = regno;
   }
   get name(){
-    return this.name.toUpperCase()
+    return this.name.toUpperCase();
   }
   set name(name2){
     if (name2 <4){
@@ -97,4 +97,4 @@ class Students{
   }
 }
 student4 = new Students("Bob", 23, "Computer Science", "IN16/OO56/24");
-student4.output
+student4.output();
