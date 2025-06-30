@@ -73,3 +73,28 @@ class User{
 
 const person5 = new User("RoSeMary Muthoni", 17);
 person5.personal();
+
+class Students{
+  constructor(name, age, course, regno){
+    this.name = name;
+    this.age = age;
+    this.course = course;
+    this.registeration = regno;
+  }
+  get name(){
+    return this.name.toUpperCase()
+  }
+  set name(name2){
+    if (name2 <4){
+      console.log("Name must be more than 4 characters long.");
+    }
+    else{
+      this.name = name2;
+    }
+  }
+  output (){
+    console.log(`My name is ${this.name}. I'm ${this.age} years old. I'm pursing ${this.course} in a university.`);
+  }
+}
+student4 = new Students("Bob", 23, "Computer Science", "IN16/OO56/24");
+student4.output
