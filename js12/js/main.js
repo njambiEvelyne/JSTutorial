@@ -46,3 +46,30 @@ class Student extends Persons{
 const student1 = new Student("Brian", 22, "Computer Science");
 student1.greet();
 student1.study();
+
+//Using the get and set methods in classes
+class User{
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  //Getter
+  get name (){
+    return this._name.toUpperCase();//Custom behaviour when getting
+  }
+  //Setter
+  set name(newName){
+    if (newName.length <3){
+      console.log("Name must be atleast three characters long.")
+    }
+    else{
+      this._name = newName;
+    }
+  }
+  personal (){
+    console.log(`My name is ${this.name} and I'm ${this.age} years old.`)
+  }
+}
+
+const person5 = new User("RoSeMary Muthoni", 17);
+person5.personal();
