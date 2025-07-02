@@ -24,3 +24,19 @@ console.log(typeof sendJSON);
 const receiveJSON = JSON.parse(sendJSON);
 console.log(receiveJSON);
 console.log(typeof receiveJSON);
+
+const Tool = {
+  name: "Cup",
+  quantity: 4,
+  makes: ["Rok", "Superplast", "kentany"],
+  purpose: ["Drinking", "Container"],
+}
+
+const sendToll = JSON.stringify(Tool);
+console.log(sendToll);
+console.log(typeof sendToll);
+
+const receiveTool = JSON.parse(sendToll);
+console.log(receiveTool);
+console.log(typeof receiveTool);
+
