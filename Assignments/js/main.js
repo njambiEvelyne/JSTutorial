@@ -13,3 +13,10 @@ console.log(Number(myNumber).toFixed(2));
 console.log(Number.parseInt(myString)); 
 
 
+function love(){
+  exression = prompt("Write I love Javascript");
+  answer = (`I ${expression} so much!`)
+  alert(`${answer}`);
+}
+
+love();
