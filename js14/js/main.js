@@ -6,10 +6,11 @@ console.log(variable);
 //Using the try...catch to hold of errors
 const makeError = () => {
   try{
-    const name = "Dave";
-    name = "Joe";
+    throw new customError("This is a custom error!");
   }catch(err){
-    console.error(err);
+    console.error(err.name);
+    console.error(err.message);
+    console.error(err.stack);
   }
 }
 makeError();
@@ -23,3 +24,9 @@ const number = () => {
 }
 
 number();
+
+function customError(message){
+  this. message = message;
+  this.name = "customError";
+  this.stack = `${this.name}: ${this.message}`;
+}
