@@ -51,3 +51,60 @@ let numi = 7;
 let num2 = 2;
 let ans = numi % num2;
 console.log(`${numi} % ${num2} = ${ans}`);
+
+//Calculating the hypotenuse of a right angled triangle
+let sideA = Number(prompt("Enter the dimensions for the height of the triangle"));
+let sideB = Number(prompt("Enter the dimensions for the base of the triangle"))
+
+let hyp = Math.sqrt(sideA **2 + sideB **2);
+console.log(`The hypotenuse measures ${hyp}`);
+alert(`The hypotenuse measures ${hyp}`);
+
+let x = 2;
+x+=2;
+console.log(x);
+
+//Arrray methods
+//To add an element in a given position use the splice method
+let myArray = ["square", "rectangle", "circle", "oval"];
+myArray.splice(2, 0, "trapezoid", "pentagon");
+console.log(myArray);
+
+let arr8 = [2,6,7,8];
+let findValue = arr8.find(function(e) {return e === 6});
+//let findValue2 = arr8.find(e => e === 10);
+console.log(findValue);
+
+//This returns undefined since the value being found is not in the array
+let findValue2 = arr8.find(function(a) {return a ===35});
+console.log(findValue2);
+
+//Sorting of values in the array
+let names = ["Evelyne", "Jose", "Rose", "Raisa"];
+console.log(names.sort());
+
+//Task
+let shoppingList = [];
+shoppingList.push("Milk", "bread", "Apples");
+console.log(shoppingList);
+shoppingList.splice(1, 0, "bananas", "Eggs");
+console.log(shoppingList);
+let lastItem = shoppingList.pop();
+console.log(lastItem);
+
+let index = shoppingList.indexOf("Milk");
+console.log(`The index value for milk is ${index}`);
+
+let newList = ["Juice", "Milk"];
+let wholeList = shoppingList.concat(newList);
+console.log(wholeList);
+
+let lastIndex = newList.lastIndexOf("Pop");
+console.log(lastIndex);
+
+//Nested Arrays
+let arr = [1,2,3];
+let newArray = [[1,2,3], [1,2,3], [1,2,3]];
+console.log(newArray[0][1]);
+let three = newArray[1][2];
+console.log(three);
