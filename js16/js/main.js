@@ -108,3 +108,41 @@ let newArray = [[1,2,3], [1,2,3], [1,2,3]];
 console.log(newArray[0][1]);
 let three = newArray[1][2];
 console.log(three);
+
+let myCar = {
+  make : "Toyota",
+  model : "Landcruiser",
+  color : "Black",
+  wheels : 4,
+  age :3
+}
+console.log(myCar);
+console.log(myCar.color);
+myCar["color"] = "white";
+console.log(myCar);
+
+myCar.sale = "forsale";
+console.log(myCar);
+
+let company = { companyName: "Healthy Candy",
+  activity: "food manufacturing",
+  address: {
+  street: "2nd street",
+  number: "123",
+  zipcode: "33116",
+  city: "Miami",
+  state: "Florida"
+  },
+  yearOfEstablishment: 2021
+ };
+
+company.address.city = "Nairobi";
+console.log(company);
+
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined, 
+{test: 'one', score: 55}, ['one', 'two']];
+theList.pop();
+theList.shift();
+console.log(theList);
+theList.splice(0, "First");
+console.log(theList);
