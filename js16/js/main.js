@@ -139,10 +139,30 @@ let company = { companyName: "Healthy Candy",
 company.address.city = "Nairobi";
 console.log(company);
 
-const theList = ['Laurence', 'Svekis', true, 35, null, undefined, 
-{test: 'one', score: 55}, ['one', 'two']];
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
 theList.pop();
 theList.shift();
 console.log(theList);
-theList.splice(0, "First");
+theList.unshift("FIRST");
 console.log(theList);
+theList[4] = "hello world!";
+console.log(theList);
+theList[3] = "MIDDLE";
+console.log(theList);
+//theList.splice(0, "First");
+//console.log(theList);
+
+//Company Product Catalog
+let catalog = [];
+let products = {
+  name : ["Sugar", "Body Splash", "Hair Fertilizers"],
+  model : ["Mumias Sugar", "White Horse", "Bamsi"],
+  cost : [200, 700, 180],
+  quantity: ["10kg", "20 Bottles", "30 Containers"]
+};
+catalog.push(products);
+console.log(catalog);
+console.log(catalog.products[0[0]],[1[0]],[2[0]]);
+
+let fullcatalog = [products.name, products.model, products.cost];
+console.log(fullcatalog);
