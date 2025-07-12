@@ -4,8 +4,7 @@ console.log(response);
 
 let chicken = "Broilers";
 let buyerBanned = false;
-let chickenAccess = buyerBanned
-  ? "Sorry you are banned from the farm access."
+let chickenAccess = buyerBanned ? "Sorry you are banned from the farm access."
   :chicken
   ? `Yes we have ${chicken} today for purchase.`
   :"Sorry, no chicken today";
